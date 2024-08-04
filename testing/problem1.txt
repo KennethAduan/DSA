@@ -1,0 +1,72 @@
+// function sumArray(arr: number[]) {
+//   let totalSum = 0;
+
+//   if (arr.length === 0) return 0;
+
+//   for (const total of arr) {
+//     totalSum += total;
+//   }
+
+//   return totalSum;
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5]));
+// console.log(sumArray([10, -2, 3]));
+
+// function findLargestNumber(arr: number[]) {
+//   // Your code here
+
+//   //   const MaxNumber = arr.reduce((accumulator, currentValue) => {
+//   //     return Math.max(accumulator, currentValue);
+//   //   }, arr[0]);
+
+//   //   return MaxNumber;
+//   let largest = arr[0];
+//   for (const numbers of arr) {
+//     if (numbers > largest) {
+//       largest = numbers;
+//     }
+//   }
+//   return largest;
+// }
+// console.log(findLargestNumber([1, 9, 3, 4, 5, 8]));
+
+// function isPalindrome(word: string): boolean {
+//   // Your code here
+//   const lowerCaseWord = word.toLowerCase();
+//   const reverse = lowerCaseWord.split("").reverse().join("");
+//   return reverse === lowerCaseWord;
+// }
+
+// console.log(isPalindrome("racecar"));
+// function countVowels(word: string) {
+//   let totalVowels = 0;
+//   const vowels = ["a", "e", "i", "o", "u"];
+
+//   // Convert word to lowercase to handle both uppercase and lowercase vowels
+//   const characters = word.toLowerCase().split("");
+
+//   for (const char of characters) {
+//     if (vowels.includes(char)) {
+//       totalVowels++;
+//     }
+//   }
+//   return totalVowels;
+// }
+
+// console.log(countVowels("hello"));
+
+// function fizzBuzz(number: number) {
+//   for (let i = 1; i <= number; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("FizzBuzz");
+//     } else if (i % 3 === 0) {
+//       console.log("Fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("Buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+// console.log(fizzBuzz(15));
