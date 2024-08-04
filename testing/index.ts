@@ -31,21 +31,32 @@
 // console.log(countWords("This is a test ")); // Output: 4
 // console.log(countWords("Hello world!")); // Output: 2
 
-function isPrime(number: number) {
-  // Your code here
+// function isPrime(number: number) {
+//   // Your code here
 
-  if (number < 2) {
-    return false;
+//   if (number < 2) {
+//     return false;
+//   }
+
+//   for (let i = 0; i < number; i++) {
+//     if (number % i == 0) {
+//       return true;
+//     } else return false;
+//   }
+
+//   return true;
+// }
+
+// console.log(isPrime(5)); // Output: true
+// console.log(isPrime(4)); // Output: false
+function twoSum(nums: number[], target: number) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
   }
-
-  for (let i = 0; i < number; i++) {
-    if (number % i == 0) {
-      return true;
-    } else return false;
-  }
-
-  return true;
 }
 
-console.log(isPrime(5)); // Output: true
-console.log(isPrime(4)); // Output: false
+console.log(twoSum([2, 7, 11, 15], 9));
