@@ -1,14 +1,14 @@
-// function removeDuplicates(numbers: number[]) {
-//   //   let newArrayNumbers = [];
+function removeDuplicates(numbers: number[]) {
+  //   let newArrayNumbers = [];
 
-//   return numbers.filter((item, index) => numbers.indexOf(item) === index);
-// }
-// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
-// console.log(removeDuplicates([5, 5, 5, 5, 5])); // Output: [5]
-// function reverseString(word: string) {
-//   // Your code here
-//   return word.toLowerCase().split("").reverse().join("");
-// }
+  return numbers.filter((item, index) => numbers.indexOf(item) === index);
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+console.log(removeDuplicates([5, 5, 5, 5, 5])); // Output: [5]
+function reverseString(word: string) {
+  // Your code here
+  return word.toLowerCase().split("").reverse().join("");
+}
 
 // console.log(reverseString("hello")); // Output: "olleh"
 // console.log(reverseString("JavaScript")); // Output: "tpircSavaJ"
@@ -73,21 +73,21 @@
 // }
 
 // console.log(isPalindrome(121));
-function isPalindrome(x: number): boolean {
-  // Handle negative numbers and numbers ending in 0
-  if (x < 0 || (x % 10 === 0 && x !== 0)) {
-    return false;
-  }
+// function isPalindrome(x: number): boolean {
+//   // Handle negative numbers and numbers ending in 0
+//   if (x < 0 || (x % 10 === 0 && x !== 0)) {
+//     return false;
+//   }
 
-  let reversed = 0;
+//   let reversed = 0;
 
-  while (x > reversed) {
-    reversed = reversed * 10 + (x % 10);
-    x = Math.floor(x / 10);
-  }
+//   while (x > reversed) {
+//     reversed = reversed * 10 + (x % 10);
+//     x = Math.floor(x / 10);
+//   }
 
-  // Handle odd length palindromes
-  return x === reversed || x === Math.floor(reversed / 10);
-}
+//   // Handle odd length palindromes
+//   return x === reversed || x === Math.floor(reversed / 10);
+// }
 
-console.log(isPalindrome(121)); // Output: true
+// console.log(isPalindrome(121)); // Output: true
